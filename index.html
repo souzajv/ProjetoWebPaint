@@ -3,16 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Gluten:wght@500&family=Inter:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"/>
         <link rel="stylesheet" href="./styles.css"/>
+        <link rel="shortcut icon" href="./assets/shortcut-icon.png">
         <title>Web Paint</title>
     </head>
     <body>
+        <div id="title">
+            <img src="./assets/pincel.png" alt="imagem de um pincel">
+            <h1>Projeto Web Paint</h1>
+        </div>
         <section class="container">
             <canvas width="900" height="600"></canvas>
             <div>
                 <section class="tool-box">
-                    <button class="button-tool" data-action="brush">
+                    <button class="button-tool active" data-action="brush">
                         <span class="material-symbols-outlined">brush</span>
                     </button>
                     <button class="button-tool" data-action="rubber">
@@ -26,7 +34,7 @@
                     <button class="button-size" data-size="5">
                         <span class="stroke"></span>
                     </button>
-                    <button class="button-size" data-size="10">
+                    <button class="button-size active" data-size="10">
                         <span class="stroke"></span>
                     </button>
                     <button class="button-size" data-size="20">

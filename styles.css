@@ -4,16 +4,33 @@
     box-sizing: border-box;
 }
 body {
-    background-color: blanchedalmond;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 canvas {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba (0, 0, 0, 0.1);
 }
+#title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+h1 {
+    padding: 16px 0;
+    color: white;
+    text-shadow: 0 0 2px black;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1.5px;
+}
+img {
+    width: 30px;
+    height: 30px;
+}
 .container {
     width: 100%;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,4 +94,7 @@ canvas {
 }
 .button-size[data-size="30"] span {
     height: 30px;
+}
+.active {
+    background-color: #f2f2f2;
 }
