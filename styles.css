@@ -11,24 +11,6 @@ canvas {
     border-radius: 8px;
     box-shadow: 0 0 5px rgba (0, 0, 0, 0.1);
 }
-#title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-h1 {
-    padding: 16px 0;
-    color: white;
-    text-shadow: 0 0 2px black;
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1.5px;
-}
-img {
-    width: 30px;
-    height: 30px;
-}
 .container {
     width: 100%;
     display: flex;
